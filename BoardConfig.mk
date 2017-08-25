@@ -16,7 +16,7 @@
 -include device/samsung/sprd-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
--include vendor/samsung/core33g/BoardConfigVendor.mk
+-include vendor/samsung/grandneove3g/BoardConfigVendor.mk
 
 # Platform
 TARGET_ARCH := arm
@@ -49,20 +49,20 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_CONFIG := cyanogen_core33g_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/core33g
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/core33g/dt.img
+TARGET_KERNEL_CONFIG := grandneove3g_hw02_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/grandneove3g
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/grandneove3g/dt.img
 
 # RIL
-BOARD_RIL_CLASS += ../../../device/samsung/core33g/ril
+BOARD_RIL_CLASS += ../../../device/samsung/grandneove3g/ril
 COMMON_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 
 # FM radio
 BOARD_HAVE_FM_BCM := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/core33g/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/core33g/bluetooth/libbt_vndcfg.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/grandneove3g/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/samsung/grandneove3g/bluetooth/libbt_vndcfg.txt
 
 # Wifi
 BOARD_WLAN_DEVICE := bcmdhd
@@ -124,13 +124,13 @@ TARGET_NEEDS_PROP_INIT_HACK := true
 BOARD_HAS_DOWNLOAD_MODE := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_SUPPRESS_EMMC_WIPE := true
-TARGET_RECOVERY_FSTAB := device/samsung/core33g/rootdir/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/samsung/grandneove3g/rootdir/recovery.fstab
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SM-G360H,SM-G360HU,core33g,core33gdd,core33gdx
+TARGET_OTA_ASSERT_DEVICE := GT-I9060I,GT-I9062I,grandneove3g,grandneove3gdd,grandneove3gdx
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/samsung/core33g/sepolicy
+BOARD_SEPOLICY_DIRS += device/samsung/grandneove3g/sepolicy
 
 # Enable dex-preoptimization to speed up the first boot sequence
 WITH_DEXPREOPT := true
