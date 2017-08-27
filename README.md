@@ -1,4 +1,4 @@
-##Device configuration for Samsung Galaxy Core Prime SPRD SM-G360H (core33g)
+##Device configuration for Samsung Galaxy Core Prime SPRD SM-G360H (grandneove3g)
 
 =====================================
 
@@ -26,7 +26,7 @@ Release Date | November 2014
 
 ### Building steps
 * 1. Sync Android source
-* 2. Copy this file ([core33g.xml](https://github.com/koquantam/android_local_manifests/blob/cm-14.1-core33g/core33g.xml)) to `.repo/local_manifests` (if that folder doesn't exist then "mkdir" it)
+* 2. Copy this file ([grandneove3g.xml](https://github.com/koquantam/android_local_manifests/blob/cm-14.1-grandneove3g/grandneove3g.xml)) to `.repo/local_manifests` (if that folder doesn't exist then "mkdir" it)
 * 3. `repo sync` again
 * 4. After syncing source and device-specific repo (from step 2), from your source root folder (where you have synced) open Terminal, `cd` to device/samsung/scx30g-common, type `./patch.sh` (this is the quick patching script)
-* 5. `cd` to your source root again, type `. build/envsetup.sh && brunch core33g`
+* 5. `cd` to your source root again, type `. build/envsetup.sh && brunch grandneove3g`
