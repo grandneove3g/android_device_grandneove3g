@@ -52,7 +52,7 @@ BOARD_HAVE_SAMSUNG_WIFI := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/grandneove3g/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogen_grandneove3g_defconfig
+TARGET_KERNEL_CONFIG := grandneove3g_hw02_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/grandneove3g
 
 # Resolution
