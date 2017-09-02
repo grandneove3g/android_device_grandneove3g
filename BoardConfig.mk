@@ -12,11 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from scx30g common configs
--include device/samsung/scx30g-common/BoardConfigCommon.mk
-
 # Inherit from the proprietary version
 -include vendor/samsung/grandneove3g/BoardConfigVendor.mk
+-include device/samsung/scx35-common/BoardConfigCommon.mk
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sc7730s
@@ -62,3 +60,11 @@ TARGET_SCREEN_WIDTH := 480
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SM-G360H,SM-G360HU,grandneove3g,grandneove3gdd,grandneove3gdx
 
+# RIL
+BOARD_RIL_CLASS += ../../../device/samsung/grandneove3g/ril
+
+# Recovery
+TARGET_RECOVERY_FSTAB := device/samsung/grandneove3g/rootdir/fstab.sc8830
+
+# System properties
+TARGET_SYSTEM_PROP += device/samsung/grandneove3g/system.prop

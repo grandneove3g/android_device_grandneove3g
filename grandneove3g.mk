@@ -19,9 +19,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Inherit from vendor tree
 $(call inherit-product-if-exists, vendor/samsung/grandneove3g/grandneove3g-vendor.mk)
-
-# Inherit from scx30g-common device configuration
-$(call inherit-product, device/samsung/scx30g-common/common.mk)
+$(call inherit-product, device/samsung/scx35-common/common.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 800
@@ -46,10 +44,31 @@ PRODUCT_PACKAGES += \
 	init.sc8830.usb.rc \
 	init.grandneove3g_base.rc \
 	ueventd.sc8830.rc
-
 # RIL
 PRODUCT_PACKAGES += \
 	rild.rc
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+	bt_vendor.conf
+
+# GPS
+PRODUCT_PACKAGES += \
+	gps.xml \
+
+# WiFi
+PRODUCT_PACKAGES += \
+	wpa_supplicant.conf \
+	nvram_net.txt \
+	nvram_mfg.txt
+
+# Rootdir
+PRODUCT_PACKAGES += \
+	fstab.sc8830
+
+# Media
+PRODUCT_PACKAGES += \
+	media_codecs.xml
 
 # WiFi
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
