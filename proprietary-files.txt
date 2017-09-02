@@ -6,7 +6,7 @@ lib/libatparser.so
 etc/gps.conf
 bin/gpsd
 bin/gps.cer
-lib/liblcsagent.so
+#lib/liblcsagent.so
 lib/hw/gps.default.so
 
 # Graphics rendering
@@ -29,14 +29,14 @@ etc/wifi/bcmdhd_sta.bin
 etc/wifi/nvram_mfg.txt
 
 # Bluetooth
-vendor/firmware/BCM43430A1_V0025.0070.hcd
+vendor/firmware/BCM43430A1_001.002.009.0013.0018_ORC_GrandNeo_VE.hcd
 
 # RIL
 bin/rild
 bin/modemd
 bin/nvitemd
 bin/phoneserver
-bin/modem_control
+#bin/modem_control
 bin/ext_data.sh
 bin/ext_kill.sh
 bin/ext_symlink.sh
@@ -49,20 +49,11 @@ lib/libsecnativefeature.so
 # Camera
 lib/libisp.so
 lib/libmorpho_easy_hdr.so
-lib/libcalibration.so
-lib/libAF.so
-lib/libsft_af_ctrl.so
-lib/libdeflicker.so
-lib/libynoise.so
-lib/libspaf.so
-lib/liblsc.so
-lib/libAl_Awb.so
-lib/libAl_Awb_Sp.so
-lib/libae.so
-lib/libawb.so
+#lib/libawb.so
 
 # ION
-lib/libmemoryheapion.so
+#lib/libmemoryheapion.so
+lib/libion.so
 
 # Codecs
 lib/libomx_avcdec_hw_sprd.so
@@ -77,4 +68,4 @@ lib/hw/gralloc.sc8830.so
 lib/hw/sensors.sc8830.so
 
 # Magnetic sensor
-lib/libyasalgo.so
+#lib/libyasalgo.so
