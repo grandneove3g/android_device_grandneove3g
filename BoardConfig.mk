@@ -58,7 +58,7 @@ TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SM-G360H,SM-G360HU,grandneove3g,grandneove3gdd,grandneove3gdx
+TARGET_OTA_ASSERT_DEVICE := GT-I9060I,grandneove3g
 
 # RIL
 BOARD_RIL_CLASS += ../../../device/samsung/grandneove3g/ril
