@@ -65,6 +65,7 @@ lib/libomx_m4vh263enc_hw_sprd.so
 # HAL
 lib/hw/camera.sc8830.so
 lib/hw/gralloc.sc8830.so
+lib/hw/lights.sc8830.so
 lib/hw/sensors.sc8830.so
 
 # Magnetic sensor
