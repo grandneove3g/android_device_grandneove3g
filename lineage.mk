@@ -14,6 +14,6 @@ $(call inherit-product, $(LOCAL_PATH)/grandneove3g.mk)
 PRODUCT_DEVICE := grandneove3g
 PRODUCT_NAME := lineage_grandneove3g
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-G360H
+PRODUCT_MODEL := GT-I9060I
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_CHARACTERISTICS := phone
